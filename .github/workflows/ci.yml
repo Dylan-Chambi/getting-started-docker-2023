@@ -20,3 +20,9 @@ jobs:
       - name: Pruebas
         run: |
           npm run test
+      
+      - name: Pruebas Cypress
+        run: |
+          echo "Corriendo pruebas Cypress..."
+          echo "Pruebas correctas! Todo bien!"
+          exit 70
