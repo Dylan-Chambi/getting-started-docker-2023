@@ -1,2 +1,22 @@
 name: Continous Integration
 
+on:
+  push:
+    branches:
+      - main
+      - testbranch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout git
+        uses: actions/checkout
+
+      - name: Instalar dependencias
+        run: |
+          npm install
+
+      - name: Pruebas
+        run: |
+          npm run test
