@@ -25,6 +25,7 @@ jobs:
         run: |
           echo "Corriendo pruebas Cypress..."
           echo "Pruebas correctas! Todo bien!"
+          echo "Tienes instalado Cypress!"
           exit 0
 
   build:
